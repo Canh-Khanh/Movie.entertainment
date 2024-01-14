@@ -1,0 +1,736 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* làm mất chân của chữ*/
+    scroll-behavior: smooth;
+    font-family:  Helvetica, Arial, sans-serif;
+    
+}
+
+.main {
+    background-color: #ccc;
+    overflow: hidden;
+    
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 70px;
+    position: fixed;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffff;
+    margin: 0 4px;
+    
+}
+
+.navbar .logo a {
+    font-size: 2rem;
+    font-family:  cursive;
+    font-weight: 600;
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 1px 1px 8px #14ebc9;
+      
+}
+
+
+.list{
+    list-style: none;
+    display: flex;
+    line-height: 46px;
+    margin-left: 16px;
+}
+
+
+
+.list a {
+    font-size: 18px;
+}
+
+#toggler,
+.navbar label {
+   display: none;
+}
+
+
+.from-icon {
+    display: flex;
+    /* margin-left: 600px; */
+    
+}
+.no {
+    display: flex;
+}
+
+
+.bell-btn {
+    height: 28px;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+    background-color: transparent;
+    padding: 6px ;
+    align-items: center;
+    transition: 0.3s ease;
+    color:#ffff;
+    font-size: 18px;
+    transition: all .3s;
+    box-shadow: 1px 1px 2px #ffffff,
+             -1px -1px 2px #ffffff;
+    text-shadow: 1px 1px 2px #000;        
+}
+
+.bell-btn:hover {
+  border: 1px solid white;
+  background-color:#ffff;
+  color:#000; 
+
+}
+
+.bell-btn-icon {
+   display: flex;
+   align-items: center;
+   margin-right: 8px;
+}
+
+.language-btn {
+    height: 28px;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+    background-color:transparent;
+    padding: 6px ;
+    align-items: center;
+    transition: 0.3s ease;
+    color:#fff;
+    font-size: 18px;
+    transition: all .3s;
+    box-shadow: 1px 1px 2px #ffffff,
+             -1px -1px 2px #ffffff;
+    text-shadow: 1px 1px 2px #000; 
+}
+
+.language-btn:hover {
+    border: 1px solid white;
+    background-color:white;
+    color:#000;
+  
+  }
+  
+
+.language-btn i {
+   display: flex;
+   align-items: center;
+   padding-right:   6px ;
+}
+
+ .down-icon {
+    display: flex;
+   align-items: center;
+   padding-left:  10px ;
+}
+
+.one{
+    border: 2px solid transparent;
+    padding: 4px;
+}
+.one:hover  {
+        border: 2px solid green;
+       border-radius: 10px ;
+        background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+        color: #21eb13;
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+        text-shadow: 1px 1px 4px #9ceb14; 
+    
+}
+
+.two{
+    border: 2px solid transparent;
+    padding: 4px;
+}
+.two:hover  {
+        border: 2px solid green;
+       border-radius: 10px ;
+        background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+        color: #21eb13;
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+        text-shadow: 1px 1px 4px #9ceb14; 
+    
+}
+
+.thrid{
+    border: 2px solid transparent;
+    padding: 4px;
+}
+.thrid:hover  {
+        border: 2px solid green;
+       border-radius: 10px ;
+        background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+        color: #21eb13;
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+        text-shadow: 1px 1px 4px #9ceb14; 
+    
+}
+
+.four{
+    border: 2px solid transparent;
+    padding: 4px;
+    margin-left: 0px;
+    
+}
+.four:hover  {
+        border: 2px solid green;
+       border-radius: 10px ;
+        background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+        color: #21eb13;
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+        text-shadow: 1px 1px 4px #9ceb14; 
+    
+}
+
+
+.item-movie {
+    margin-top: -100px;
+}
+
+/*------------------------------------------------*/
+
+
+.slider {
+    position: relative;
+    margin-top: 70px;
+    padding-top: 50%;
+    overflow: hidden;
+    background: url("https://www.epochtimesviet.com/wp-content/uploads/2023/09/id14058574-shutterstock_1917684617-scaled.jpg") top center /cover no-repeat ;
+    background-size: cover; /* Đảm bảo ảnh nền lấp đầy toàn bộ phần slider */
+    height: 100vh; /* Đặt chiều cao của slider bằng chiều cao của trình duyệt */
+    width: 100%;
+}
+
+
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.5) for the desired opacity */
+}
+
+.slider-picture {
+    position: absolute;
+    color: #ccc;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+}
+.slider-name {
+    position: absolute;
+    color: #ccc;
+    width: 100%;
+    top: 100%;
+    text-align: center;
+
+}
+
+.picture-img {
+    width: 30%;    
+    animation:modalFaceIn 1s ease-in-out;
+
+}
+.write-h1 {
+    margin-top: -60px;
+    font-family: system-ui;
+    width: 86%;
+    text-align: justify;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    text-shadow: 2px 2px 7px #000;
+    animation: showcontent 1s ease   forwards;
+    opacity: 0;
+
+
+}
+.write-p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 7px #000;
+    animation: showcontent 1s ease 0.3s  forwards;
+    opacity: 0;
+
+
+
+}
+
+.write-btn {
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    background: #ff1c00;
+    border-radius: 8px;
+    border: none;
+    font-family: monospace;
+    text-shadow: 2px 2px 6px #000000;
+    animation: showcontent 1s ease 0.6s  forwards;
+    opacity: 0;
+
+
+}
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+
+    to{
+        opacity: 2;
+        transform: translateY(1px);
+    }
+}
+
+@keyframes modalFaceInde {
+    from {
+        opacity: 0;
+        transform: translateY(1px);
+    }
+
+    to{
+        opacity: 2;
+        transform: translateY(-180px);
+    }
+}
+
+@keyframes showcontent {
+    from {
+        opacity: 0;
+        transform: translate(0 , 100px);
+        filter: blur(33px);
+    } to {
+        opacity: 1;
+        transform: translate(0 , 0);
+        filter: blur(0);
+    }
+}
+/*--------------------------------------------------*/
+
+/* Phần nổi đăng nhập */
+.modal {
+
+
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0 ,0 , 0, 0.4);
+    /*Nằm giữa chiều cao của cha*/
+    align-items: center;
+    /*Nằm giữa chiều ngang*/
+    justify-content: center;
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+
+.modal-container
+{   
+    background-size: cover; /* Đảm bảo ảnh nền lấp đầy toàn bộ phần slider */
+    box-shadow: 2px 2px 8px #ccc,-2px -2px  8px #ccc;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 291px;
+    max-width: cacl(100%-32px);
+    min-height: 400px;
+    position: relative;
+    max-width: cacl(100%-32px);
+    border: none;
+}
+
+
+.modal-container-close {
+     /*Để cho dấu x vào cùng header ta dùng position */
+     position: absolute;
+     right: 0;
+     top:0;
+     color: #fff;
+     padding: 12px;
+     cursor: pointer;
+}
+
+.modal-container-close:hover{
+    color:#d32b1f;
+}
+
+.modal-header {
+    /* height: 13px; */
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 12px;
+}
+.modal-label {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: -4px;
+}
+.modal-pass a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.modal-icon {
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-120%);
+    padding: 1px 6px 0 0;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+}
+.modal-pass {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-tickets {
+    width: 100%;
+    margin-top: 14px;
+    padding: 5px;
+    border: 1px solid #ffff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    /* box-shadow: 0 0 30px #ccc; */
+}
+.pass-forget {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px;
+    margin-top: -4px;
+}
+
+
+.modal-header-head{
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body{
+    padding : 14px;
+    color: #830c0c;
+}
+
+
+
+.modal-label-pass{
+    margin-top: 10px;
+}
+/* Đặt màu chữ cho input khi focus là trắng */
+.modal-input:focus {
+    color: #fff;
+}
+
+.modal-input::placeholder {
+    color: #fff;
+}
+
+.modal-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom:1px solid #fff ;
+    flex: 1;
+    padding: 6px; /* Để tạo khoảng trống bên phải cho icon */
+    margin-top: 6px;
+}
+
+.modal-icon{
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-120%);
+    padding: 1px 6px 0 0;
+    color: #fff;
+    font-size: 20px;
+    float: right;
+}
+
+.modal-pass{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.modal-pass a:hover {
+    color:  #898686;
+}
+
+.modal-word i {
+    color:#fff;
+}
+
+.modal-word i:hover {
+    opacity: 0.6;
+}
+
+
+
+.modal-tickets:hover {
+    background-color: rgba(0 ,0 , 0, 0.4);
+    color: rgba(213, 207, 207, 0.4);
+}
+
+.pass-boder{
+    border-bottom: 1px solid #fff ;
+}
+.pass-forget a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 4px;
+    
+}
+
+.pass-forget a:hover{
+    color:rgba(213, 207, 207, 0.4);
+}
+
+.item-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item-icon i{ 
+    margin: 0 10px 0 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 14px;}
+
+.icon i:hover {
+    opacity: 0.5;
+}
+.icon i {
+    margin: 0 10px 0 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.color-gg{
+    color:red;
+
+}
+
+.color-fb{
+    color:blue;
+}
+ 
+/*-------------------------------------------*/
+.grow {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+} 
+
+.item {
+    margin-top: 150px;
+    color: #fff;
+    text-align: center;
+    min-height: 223px;
+    justify-content: space-between;
+  
+    
+}
+
+.content{
+    margin-top: 100px;
+
+}
+.item h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #0da582;
+}
+
+
+.item-first {
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 34px;
+    text-align: justify;
+}
+
+
+.card-one {
+    width: 80%;
+    border-radius: 10px;
+    transform: all 0.3s ease;
+    margin-top: -20px;
+    
+}
+.item-card {
+    margin-top: px;
+     height: 200px; 
+}
+.card-list {
+    display: none;
+}
+/*----------------------------------------*/
+.footer-grow {
+    background-color: #000;
+    margin-top: 2px;
+}
+
+.item-last {
+    margin-top: 80px;
+    min-height: 230px;
+    color: #fff;
+    justify-content: space-between;
+
+}
+
+.gird-item-culum {
+    margin: 0px 0 18px 0;
+    font-size: 1.5rem;
+    
+}
+
+.footer-list {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer-item {
+    margin: 4px;
+   font-size: 16px;
+       
+    
+}
+
+.footer-item-link {
+    text-decoration: none; 
+    color: #ccc;
+    display: block; 
+    padding: 5px 0; 
+}
+
+
+.footer-item-link:hover {
+    color: #007bff; 
+}
+
+.footer-icon-fb{
+    color:blue;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.footer-icon-inta
+{
+    color:#d2691e;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+    
+    border-radius: 50%;
+}
+
+.footer-icon-call {
+    color:#fff;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 13px;
+    margin-left: 2px;
+    border-radius: 50%;
+}
+
+.footer-icon-gg {
+    color:rgb(225, 255, 0);
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+ 
+    border-radius: 50%;
+}
+
+.row-item {
+    border-top: 1px solid #928f8f;
+}
+
+.last {
+    margin-top: 50px;
+    min-height: 80px;
+}
+
+.last-icon {
+    margin: 10px 0 0 40px;
+    color: #000;
+    font-size: 1px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.gird-final-culum {
+    font-size: 16px;
+    line-height: 26px;
+    width: 110%;
+}
+
+.last-list {
+    margin-left: 100px;
+}

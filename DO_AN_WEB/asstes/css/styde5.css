@@ -1,0 +1,463 @@
+
+@media screen  and (max-width: 740px)  {
+  
+    .menu {
+        width: 40%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #100b0b;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        transition: max-height 0.3s ease-in-out;
+        
+      
+        border-bottom-right-radius: 5px;
+    }
+    
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+        gap:20px;
+    }
+    
+    .list li {
+        text-align: center;
+        display: block; 
+    }
+    
+    .list a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    
+    
+    #toggler:checked ~ .menu {
+        max-height: 500px;
+    }
+    
+    #toggler {
+        display: none;
+    }
+    
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    #toggler:checked + label .fas.fa-bars {
+        transform: rotate(90deg);
+    } 
+    
+    .navbar .logo a {
+        font-size: 1.5rem;
+        font-family:  cursive;
+        color:#7fffd4;
+    }
+    
+    .bell-btn {
+        height: 24px;
+        font-size: 14px;
+    
+    }
+    
+    .language-btn {
+    height: 24px;
+    font-size: 14px;
+    
+    }
+    
+    .language-btn i {
+        padding-right: 2px ;
+    }
+    
+    .down-icon {
+        padding-left:  4px ;
+    }
+    .from-icon {
+        
+        margin-left: 9px;
+    }
+    .item-video {
+       width: 90%;
+       height: 235px;
+       margin-left: 19px;
+}
+    .content h1 {
+        font-size: 22px;
+        margin-bottom: 14px;
+}
+    .content {
+        font-size: 12px;
+}
+    .modal-label {
+        font-size: 15px;
+}
+    .item {
+        margin-top: 66px;
+        min-height: 337px;
+        margin-bottom: 10px;
+    }
+    .intro-new {
+        background-color: #f3f1f1;
+        text-shadow: none;
+        font-size: -5px;
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .letter {
+        font-size: 12px;
+        margin-left: -23px;
+    }
+    .inputs {
+       
+        margin-top: -16px;
+    }
+    .card-last {
+        margin-left: -4px;
+    }
+    .item-video {
+        width: 93%;
+        height: 199px;
+        margin-left: 15px;
+    }
+    .modal-input {
+        width: 76%;
+        
+    }
+    .card-list {
+        width: 132%;
+        margin-left: 36px;
+    }
+    .new {
+        font-size: 18px;
+        padding: 2px;
+        width: 83%;
+        border-bottom:none;
+        margin-bottom: 10px;
+        margin-left: 14px;
+        margin-top: 26px;
+}
+    .card-fist {
+        background-color: #000000;
+        width: 204%;
+        margin-top: -10px;
+    }
+    .new-w{
+        display: none;
+    }
+    
+    .card-one {
+        width: 100%;
+        margin-left: 13px;
+        box-shadow: 1px 1px 11px #000000, -1px -1px 3px #584e4e;
+    }
+    .card-list h4 {
+        margin-bottom: -1px;
+        font-size: 14px;
+        margin: 5px 0 0 -4px;
+    }
+
+    .nationality {
+        font-size: 14px;
+        margin: 5px 0 9px -4px;
+    }
+    .nationality i {
+        font-size: 10px;
+    }
+    .intro span {
+        background-color: #21eb13;
+        border: 1px solid #000;
+        margin-right: -1px;
+        border-radius: 4px;
+         font-size: 12px; 
+         padding: 2px;
+    }
+    .intro {
+        font-size: 14px;
+        margin-left: -4px;
+
+    }
+    
+   .nn{
+    margin-top: -10px;
+   }
+   
+/* Tạo tanh cuộn */
+.web {
+    height: 50vh;
+}
+
+.footer {
+    display: none;
+}
+.item-footer {
+    margin-left: 13px;
+}
+
+.footer2 {
+    display: block;
+} 
+
+.center {
+    width: 60%;
+    margin-left: 142px;
+}
+.one-item {
+    margin-left: 130px;
+    margin-right: -2px;
+}
+.two-item {
+    margin-right: 123px;
+    margin-left: 8px;
+}
+.fab-icon {
+    margin-top: 50px;
+    margin-left: -22px;
+}
+
+.footer {
+    display: none;
+}
+
+.footer2 {
+    display: block;
+} 
+.center {
+    width: 88%;
+    margin-left: 50px;
+}
+
+.center-item a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    text-shadow: 2px 2px 6px #ffffff;
+}
+.center-item {
+    padding: 8px;
+}
+.last {
+
+    margin-right: 54px;
+}
+.item-last {
+    margin-top: 100px;
+    color: #fff;
+    min-height: 194px;
+    margin-left: 24px;
+}
+.number-item-list {
+    
+    padding: 8px;
+   
+}
+
+.item-footer {
+    margin-left: 1px;
+    margin-top: 18px;
+}
+.item-footer p {
+    margin-left: -2px;
+}
+
+.fab-icon {
+    margin-top: 14px;
+    margin-left: -22px;
+}
+.number-item-list a {
+    font-size: 14px;
+}
+
+.one-item {
+    margin-left: 40px;
+    margin-right: -46px;
+}
+.two-item {
+    margin-right: -1px;
+    margin-left: -8px;
+}
+
+.gird-item-culum {
+    font-size: 14px;
+}
+.gird-final-culum {
+    margin-top: 14px; 
+   margin-bottom: 41px;
+   margin-left: 2px;
+   font-size: 10px;
+}
+.no {
+    font-size: 12px;
+} 
+
+    
+    
+     
+
+}
+
+@media screen  and (min-width: 740px) and (max-width: 1023px){
+    .list{
+        list-style: none; 
+    }
+    
+    .list a {
+        font-size: 15px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: #ffff;
+        
+    }
+    .from-icon {
+        
+        margin-left: 30px;
+        
+    }
+    .item-video {
+        width: 93%;
+        height: 268px;
+        margin-left: 16px;
+    }
+    .card-last {
+        margin-left: -50px;
+    }
+    .modal-input {
+        width: 76%;
+        
+    }
+    .card-fist {
+        background-color: #0d0d0d;
+        width: 120%;
+    }
+   .new {
+        font-size: 18px;
+        padding: 2px;
+        width: 83%;
+        border-bottom: 1px solid;
+        margin-bottom: 10px;
+    }
+  
+    .new-w{
+        display: none;
+    }
+    
+    .card-one {
+        width: 84%;
+        margin-left: 13px;
+        box-shadow: 1px 1px 11px #000000, -1px -1px 3px #584e4e;
+    }
+    .card-list h4 {
+        margin-bottom: -1px;
+        font-size: 12px;
+        margin: -8px 0 0 -4px;
+    }
+
+    .nationality {
+        font-size: 12px;
+        margin: 3px 0 0 -4px;
+    }
+    .nationality i {
+        font-size: 7px;
+    }
+    .intro span {
+        background-color: #21eb13;
+        border: 1px solid #000;
+        margin-right: -1px;
+        border-radius: 4px;
+         font-size: 10px; 
+         padding: 2px;
+    }
+    .intro {
+        font-size: 12px;
+        margin-left: -4px;
+
+    }
+    
+
+    .card-list {
+        width: 132%;
+        
+    }
+   .nn{
+    margin-top: -10px;
+   }
+    .intro-new {
+    background-color: #0c0c0c; 
+    text-shadow: none;
+    font-size: -5px;
+    margin-top: -12px;
+    color: transparent;
+} 
+/* Tạo tanh cuộn */
+.web {
+    height: 43vh;
+}
+
+.footer {
+    display: none;
+}
+.item-footer {
+    margin-left: 13px;
+}
+
+.footer2 {
+    display: block;
+} 
+
+.center {
+    width: 60%;
+    margin-left: 142px;
+}
+.one-item {
+    margin-left: 130px;
+    margin-right: -2px;
+}
+.two-item {
+    margin-right: 123px;
+    margin-left: 8px;
+}
+.fab-icon {
+    margin-top: 50px;
+    margin-left: -22px;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1239px) {
+
+    .list{
+        list-style: none;
+        
+       
+           
+    }
+    
+    .list a {
+        font-size: 18px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: #ffff;
+        
+    }
+
+    .from-icon {
+        
+        margin-left: 10px;
+        
+    }
+    .from-icon {
+        
+        margin-left: 30px;
+        
+}  
+}
